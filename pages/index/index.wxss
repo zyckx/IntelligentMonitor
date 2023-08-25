@@ -1,0 +1,27 @@
+/**index.wxss**/
+.container {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background: #f4f5f9;
+}
+
+.example-search {
+	background-color: #fff;
+	padding: 16rpx 32rpx;
+}
+
+.block {
+	display: block;
+}
+
+.notice-bar-wrap{
+	margin: 16rpx 32rpx;
+	padding: 5rpx;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 20rpx;
+}
+.swiper-wrap{
+	padding: 16rpx 32rpx;
+}

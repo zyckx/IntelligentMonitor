@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="example-search">
+    <t-search model:value="{{value}}" placeholder="搜索预设文案" />
+  </view>
+
+  <view class="swiper-wrap">
+    <t-swiper current="{{current}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}" list="{{swiperList}}" navigation="{{ { type: 'dots-bar' } }}" pagination-position="bottom-right" />
+  </view>
+  <view class="notice-bar-wrap">
+    <t-notice-bar visible="{{true}}" direction="vertical" interval="{{3000}}" content="{{content}}" prefixIcon="sound" bind:click="click"></t-notice-bar>
+  </view>
+  <view class="block">
+  <t-grid border="{{border}}" column="{{3}}">
+    <t-grid-item text="分享" image="slot">
+      <view slot="image" class="grid-item__image">
+      <t-icon name="person" size="48rpx" prefix="iconfont" data-name="iconfont-person"/>
+    </view>
+  </t-grid-item>
+  <t-grid-item text="收藏" icon="star" bindclick="onClick" />
+  <t-grid-item text="保存" icon="download" bindclick="onClick" />
+  <t-grid-item text="分享" image="slot">
+    <view slot="image" class="grid-item__image">
+      <t-icon name="person" size="48rpx" prefix="iconfont" data-name="iconfont-person"/>
+    </view>
+  </t-grid-item>
+  <t-grid-item text="收藏" icon="star" bindclick="onClick" />
+  <t-grid-item text="保存" icon="download" bindclick="onClick" />
+  </t-grid>
+</view>
+
+</view>
