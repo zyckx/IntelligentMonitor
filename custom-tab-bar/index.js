@@ -9,7 +9,7 @@ Component({
 			},
 			{
 				value: '/pages/control/control',
-				label: '控制台',
+				label: '报告',
 				icon: 'app',
 				ariaLabel: '我的'
 			},
@@ -21,7 +21,7 @@ Component({
 			},
 			{
 				value: '/pages/person/person',
-				label: '首页',
+				label: '我的',
 				icon: 'user',
 				ariaLabel: '我的'
 			}

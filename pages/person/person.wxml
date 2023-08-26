@@ -13,19 +13,7 @@
 		</view>
 	</view>
 	<view class="info-card">
-		<t-cell-group theme="card">
-			<t-cell title="单行标题" leftIcon="service" hover />
-
-
-			<t-cell title="多行带头像" hover arrow>
-				<view class="avatar" slot="left-icon">
-					<open-data type="userAvatarUrl" />
-				</view>
-				<view class="avatar" slot="left-icon">
-					<open-data type="userAvatarUrl" />
-				</view>
-			</t-cell>
-		</t-cell-group>
+		<text bind:tap="gotologin">登录</text>
 	</view>
 	<view class="others">
 		<t-cell title="操作记录" hover arrow />

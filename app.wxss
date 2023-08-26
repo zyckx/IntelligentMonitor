@@ -1,5 +1,6 @@
 /**app.wxss**/
-@import "./icon/icon.wxss";
+@import "./icon/controlIcon.wxss";
+@import "./icon/tabIcon.wxss";
 .container {
     width: 100%;
     height: 100%;

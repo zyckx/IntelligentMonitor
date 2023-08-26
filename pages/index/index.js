@@ -20,6 +20,7 @@ const swiperList = [
 		ariaLabel: '图片2',
 	},
 ];
+
 Page({
 	data: {
 		current: 1,
@@ -42,6 +43,32 @@ Page({
 			delay: 0,
 		},
 		content: ['君不见', '高堂明镜悲白发', '朝如青丝暮成雪', '人生得意须尽欢', '莫使金樽空对月'],
+		gridItemList: [
+			{
+			  text: '标题文字',
+			  img: "/icon/imageIcon/yiliao_yiliaowendang1.png",
+			},
+			{
+			  text: '标题文字',
+			  img: "/icon/imageIcon/yiliao_yiliaowendang.png" ,
+			},
+			{
+			  text: '标题文字',
+			  img:"/icon/imageIcon/yiliao_yiliaodaping1.png" ,
+			},
+			{
+			  text: '最多五个字',
+			  img: "/icon/imageIcon/yiliao_xindianyi.png" ,
+			},
+			{
+			  text: '最多五个字',
+			  img: "/icon/imageIcon/yiliao_bengdai.png" ,
+			},
+			{
+			  text: '最多五个字',
+			  img: '/icon/imageIcon/yiliao_shanchu.png',
+			},
+		  ],
 	},
 	onShow() {
 		if (typeof this.getTabBar === "function" && this.getTabBar()) {

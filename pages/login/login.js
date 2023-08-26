@@ -1,11 +1,15 @@
 // pages/login/login.js
+import Toast from 'tdesign-miniprogram/toast/index';
 Page({
 
 	/**
 	 * 页面的初始数据
 	 */
 	data: {
-
+		textPassword: '',
+		phoneError: false,
+		phoneNumber: '',
+		isAgreed: true
 	},
 
 	/**
@@ -26,7 +30,7 @@ Page({
 	 * 生命周期函数--监听页面显示
 	 */
 	onShow() {
-    if (typeof this.getTabBar === "function" && this.getTabBar()) {
+		if (typeof this.getTabBar === "function" && this.getTabBar()) {
 			const page = getCurrentPages().pop();
 			this.getTabBar().setData({
 				value: "/" + page.route,
@@ -67,5 +71,38 @@ Page({
 	 */
 	onShareAppMessage() {
 
-	}
+	},
+	onLogin() {
+		if (this.isAgreed) {
+
+		} else {
+			Toast({
+				context: this,
+				selector: '#t-toast',
+				message: '请选择是否同意用户协议',
+				theme: 'error',
+				direction: 'column',
+			});
+		}
+	},
+	onPhoneInput(e) {
+		const {
+			phoneError
+		} = this.data;
+		const isPhoneNumber = /^[1][3,4,5,7,8,9][0-9]{9}$/.test(e.detail.value);
+		if (phoneError === isPhoneNumber) {
+			this.setData({
+				phoneError: !isPhoneNumber,
+			});
+		}
+	},
+	onChange(event) {
+		const {
+			checked
+		} = event.detail;
+		console.log(checked)
+		this.setData({
+			isAgreed: checked
+		});
+	},
 })

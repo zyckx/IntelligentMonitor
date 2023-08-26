@@ -6,12 +6,13 @@
 		"pages/control/control",
 		"pages/notification/notification",
 		"pages/heatmap/index",
-		"pages/login/login"
+		"pages/login/login",
+		"pages/mqtt/mqtt"
 	],
 	"window": {
 		"backgroundTextStyle": "light",
-		"navigationBarBackgroundColor": "#0052d9",
-		"navigationBarTitleText": "手机袋识别",
+		"navigationBarBackgroundColor": "#28917f",
+		"navigationBarTitleText": "智能监护",
 		"navigationBarTextStyle": "white"
 	},
 	"tabBar": {

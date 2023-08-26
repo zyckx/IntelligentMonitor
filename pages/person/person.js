@@ -91,5 +91,10 @@ Page({
       wx.navigateTo({
         url: '/pages/heatmap/index',
       })
-    }
+	},
+	gotologin(){
+		wx.navigateTo({
+		  url: '/pages/login/login',
+		})
+	}
 });

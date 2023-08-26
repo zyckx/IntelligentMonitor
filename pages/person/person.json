@@ -7,6 +7,5 @@
 		"t-switch": "tdesign-miniprogram/switch/switch",
 		"t-icon": "tdesign-miniprogram/icon/icon"
 	},
-	"navigationBarBackgroundColor": "#409eff",
 	"navigationBarTitleText": "我的"
 }
